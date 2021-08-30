@@ -40,11 +40,6 @@ async def mentionall(event):
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels!__")
  
- @ müşteri . on ( olaylar . NewMessage ( model = "^/durdur ?(.*)" ))
-zaman uyumsuz  def  söz ( olay ): l
-  eğer  olay . is_private :
-    dönüş  bekleme  olayı . cevap ver ( "__Bu komut gruplarda ve kanallarda kullanılabilir!__" )
-  
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)

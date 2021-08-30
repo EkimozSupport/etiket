@@ -17,10 +17,10 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("__**Im Mango Davet Bot**, Gruptaki Herkesi Chate Davet edebilirim 👻\nClick **/help** for more infomation__\n\n Bilgi amaçlı kanalımıza bakabilirsiniz @kizilsancakBilgi(t.me/KizilsancakBilgi)",
+  await event.reply("__**Im Mango Davet Bot**, Gruptaki Herkesi Chate Davet edebilirim 👻\nClick **/help** for more infomation__\n\n Bilgi amaçlı kanalımıza bakabilirsiniz @kizilsancakBilgi",
                     buttons=(
                       [Button.url('📣 Grup', 'https://t.me/Smailesi'),
-                      Button.url('📦 Sahip', 'https://t.me/KizilSancakSahibi')]
+                      Button.url('🎶 PARALI BOT', 'https://t.me/ucretlibotlar')]
                     ),
                     link_preview=False
                    )
@@ -30,7 +30,7 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [Button.url('📣 Grup', 'https://t.me/Smailesi'),
-                      Button.url('📦 Sahip', 'https://t.me/kizilsancaksahibi')]
+                      Button.url('🎶 PARALI BOT', 'https://t.me/ucretlibotlar')]
                     ),
                     link_preview=False
                    )

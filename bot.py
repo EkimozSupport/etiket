@@ -41,11 +41,11 @@ async def mentionall(event):
     return await event.respond("__This command can be use in groups and channels!__")
  
 @client.on(events.NewMessage(pattern="^/durdur ?(.*)"))
-async def mentionall(event):
+async def mentionall(event):Botu durduruyorum
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels!__")
  
-  admins = []
+  admins = [(pattern="^/dur ?(.*)")]
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:

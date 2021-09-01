@@ -26,7 +26,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Yardım Mango Davet Bot**\n\nCommand: /Davet\n__Sohbettekileri Davet Etmemimi istiyorsun.__\n`Example: /Davet Günaydın`\n__komutumun yanına bir mesaj ile herkesi davet edebilirim. Bot will tag users to that replied messsage__.\n\nBilgi için [@kizilsancakbilgi](https://t.me/kizilsancakbilgi) Sayfasındayız"
+  helptext = "**Yardım MİNİK Davet Bot**\n\nCommand: /Davet\n__Sohbettekileri Davet Etmemimi istiyorsun.__\n`Example: /Davet Günaydın`\n__komutumun yanına bir mesaj ile herkesi davet edebilirim. Bot will tag users to that replied messsage__.\n\nBilgi için [@kizilsancakbilgi](https://t.me/kizilsancakbilgi) Sayfasındayız"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('💎 Grup', 'https://t.me/Smailesi'),

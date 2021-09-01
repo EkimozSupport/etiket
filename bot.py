@@ -17,9 +17,9 @@ client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("__**Im Mango Davet Bot**, Gruptaki Herkesi Chate Davet edebilirim 👻\nClick **/help** for more infomation__\n\n Bilgi amaçlı kanalımıza bakabilirsiniz @kizilsancakBilgi",
+  await event.reply("__**Merhaba Ben Minik Davet Botuyum**, Gruptaki Herkesi Chate Davet edebilirim 👻\nClick **/help** for more infomation__\n\n Bilgi amaçlı kanalımıza bakabilirsiniz @kizilsancakBilgi",
                     buttons=(
-                      [Button.url('📣 Grup', 'https://t.me/Smailesi'),
+                      [Button.url('💎 Grup', 'https://t.me/Smailesi'),
                       Button.url('🎶 PARALI BOT', 'https://t.me/ucretlibotlar')]
                     ),
                     link_preview=False
@@ -29,7 +29,7 @@ async def help(event):
   helptext = "**Yardım Mango Davet Bot**\n\nCommand: /Davet\n__Sohbettekileri Davet Etmemimi istiyorsun.__\n`Example: /Davet Günaydın`\n__komutumun yanına bir mesaj ile herkesi davet edebilirim. Bot will tag users to that replied messsage__.\n\nBilgi için [@kizilsancakbilgi](https://t.me/kizilsancakbilgi) Sayfasındayız"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('📣 Grup', 'https://t.me/Smailesi'),
+                      [Button.url('💎 Grup', 'https://t.me/Smailesi'),
                       Button.url('🎶 PARALI BOT', 'https://t.me/ucretlibotlar')]
                     ),
                     link_preview=False

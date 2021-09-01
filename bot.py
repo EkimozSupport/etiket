@@ -40,7 +40,7 @@ async def mentionall(event):
   if event.is_private:
     return await event.respond("__This command can be use in groups and channels!__")
  
- admins = [(pattern="^/dur ?(.*)")]
+ admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
